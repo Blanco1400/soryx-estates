@@ -7,20 +7,20 @@ const LISTINGS = [
     id: 1, type: "Loft", status: "Contract Pending",
     address: "16 W 19th St, Unit 3D", neighborhood: "Flatiron", city: "New York, NY",
     price: null, beds: 1, baths: 1, sqft: 907,
-    img: "https://i.imgur.com/GDR0Wae.jpg",
+    img: "https://i.imgur.com/5gkLnzP.jpg",
     gallery: [
-      { url: "https://i.imgur.com/GDR0Wae.jpg", label: "Living Room" },
-      { url: "https://i.imgur.com/TTzZt3X.jpg", label: "Loft" },
-      { url: "https://i.imgur.com/8UC5ENm.jpg", label: "Living Room Detail" },
-      { url: "https://i.imgur.com/5gkLnzP.jpg", label: "Bedroom" },
-      { url: "https://i.imgur.com/NHrnvBt.jpg", label: "Dining Area" },
-      { url: "https://i.imgur.com/D0DSD7I.jpg", label: "Kitchen" },
-      { url: "https://i.imgur.com/Q8sJUfU.jpg", label: "Bathroom" },
-      { url: "https://i.imgur.com/gbcIs4v.jpg", label: "Entrance" },
-      { url: "https://i.imgur.com/qStcztJ.jpg", label: "Hallway" },
-      { url: "https://i.imgur.com/itNqcxC.jpg", label: "Lounge" },
-      { url: "https://i.imgur.com/BigvFHn.jpg", label: "Rooftop Terrace" },
-      { url: "https://i.imgur.com/yN0dMJS.jpg", label: "Fitness Center" },
+      { url: "https://i.imgur.com/GDR0Wae.jpg", label: "Dining Area" },
+      { url: "https://i.imgur.com/TTzZt3X.jpg", label: "Living Room Detail" },
+      { url: "https://i.imgur.com/8UC5ENm.jpg", label: "Bedroom" },
+      { url: "https://i.imgur.com/5gkLnzP.jpg", label: "Living Room" },
+      { url: "https://i.imgur.com/NHrnvBt.jpg", label: "Loft" },
+      { url: "https://i.imgur.com/D0DSD7I.jpg", label: "Rooftop Lounge" },
+      { url: "https://i.imgur.com/Q8sJUfU.jpg", label: "Entrance" },
+      { url: "https://i.imgur.com/gbcIs4v.jpg", label: "Full Bathroom — Dual Sinks" },
+      { url: "https://i.imgur.com/qStcztJ.jpg", label: "Kitchen" },
+      { url: "https://i.imgur.com/itNqcxC.jpg", label: "Hallway" },
+      { url: "https://i.imgur.com/BigvFHn.jpg", label: "Gym" },
+      { url: "https://i.imgur.com/yN0dMJS.jpg", label: "Rooftop Terrace" },
     ],
     tags: ["24/7 Doorman", "Rooftop Terrace", "Sauna", "In-Unit W/D", "Juliet Balconies"],
     featured: true,
@@ -378,7 +378,7 @@ body { background: var(--cream); color: var(--dark); min-height: 100vh; }
 .gallery-main-wrap {
   position: relative; width: 100%; aspect-ratio: 16/9; overflow: hidden; background: #111; border-radius: 16px 16px 0 0;
 }
-.gallery-main-img { width: 100%; height: 100%; object-fit: cover; display: block; transition: opacity 0.25s ease; }
+.gallery-main-img { width: 100%; height: 100%; object-fit: contain; display: block; transition: opacity 0.25s ease; background: #111; }
 .gallery-label {
   position: absolute; bottom: 14px; left: 14px;
   background: rgba(26,24,20,0.72); backdrop-filter: blur(6px);
