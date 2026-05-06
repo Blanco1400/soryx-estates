@@ -618,7 +618,7 @@ export default function App() {
           <div className="hero-bg" />
           <div className="hero-content">
             <div className="hero-eyebrow">Soryx Estates · New York City</div>
-            <h1 className="hero-title">Find your <em>perfect</em> address</h1>
+            <h1 className="hero-title">Find your <em>perfect</em> home</h1>
             <p className="hero-sub">Curated listings across Manhattan, Brooklyn, and beyond — exclusively represented by Soryx Estates.</p>
             <div className="hero-search">
               <input
